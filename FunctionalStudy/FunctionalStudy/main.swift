@@ -8,4 +8,10 @@
 
 import Foundation
 
+let purePlus = PureFunction.addValue(3, b: 5)
+print(purePlus)
+
+var c = 10
+let notPurePlus = PureFunction.addValue2(a: 3, b: 5, c: c)
+print(notPurePlus)
 
