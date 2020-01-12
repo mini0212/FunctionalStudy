@@ -8,10 +8,26 @@
 
 import Foundation
 
-let purePlus = PureFunction.addValue(3, b: 5)
-print(purePlus)
+// 순수 함수
+// 1.
+print(PureFunction.addValue(a: 3, b: 5))
 
+// 2.
 var c = 10
-let notPurePlus = PureFunction.addValue2(a: 3, b: 5, c: c)
-print(notPurePlus)
+print(PureFunction.addValue2(a: 3, b: 5, c: c))
 
+// 3.
+print(PureFunction.c)
+print(PureFunction.addValue3(a: 3, b: 5))
+print(PureFunction.c)
+
+// 4.
+let objEx = ObjectEx()
+print(objEx.num)
+print(PureFunction.addValue4(obj: objEx, b: 5))
+print(objEx.num)
+
+// 5.
+print(objEx.num)
+print(PureFunction.addValue5(obj: objEx, b: 5))
+print(objEx.num)

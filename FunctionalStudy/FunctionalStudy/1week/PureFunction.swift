@@ -12,7 +12,7 @@ class PureFunction {
     
     static var c = 20
     
-    static func addValue(_ a: Int, b: Int) -> Int {
+    static func addValue(a: Int, b: Int) -> Int {
         return a + b
     }
     
@@ -24,4 +24,20 @@ class PureFunction {
         c = b
         return a + b
     }
+    
+    // inout -> 들어온 인자의 값을 바꾸는 것이므로 명시적으로 표시
+    static func addValue4(obj: ObjectEx, b: Int) -> Int {
+        obj.num += b
+        return obj.num
+    }
+    
+    static func addValue5(obj: ObjectEx, b: Int) -> Int {
+        return obj.num + b
+    }
+
 }
+
+class ObjectEx {
+    var num: Int = 10
+}
+
