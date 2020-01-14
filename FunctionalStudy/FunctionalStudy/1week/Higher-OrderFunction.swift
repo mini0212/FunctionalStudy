@@ -21,6 +21,19 @@ class HighOrderFunction {
     }
     
     static let multiple: (Int) -> Int = { $0 * 2 }
+    
+    static func filterEvens(_ numbers: [Int]) -> [Int] {
+        var evenNumbers = [Int]()
+        
+        for number in numbers {
+            if number % 2 == 0 { evenNumbers.append(number) }
+        }
+        
+        return evenNumbers
+    }
+    
+    static let filterEven2: (Int) -> Bool = { $0 % 2 == 0 }
+    
 }
 
 

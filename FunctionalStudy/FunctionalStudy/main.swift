@@ -10,12 +10,27 @@ import Foundation
 
 // 고차함수
 let numbers = [0, 1, 2, 3, 4]
-print(HighOrderFunction.multiply2(numbers))
-print(numbers.map({ (num) -> Int in
-    num * 2
+
+print(HighOrderFunction.filterEvens(numbers))
+
+print(numbers.filter({ (num) -> Bool in
+    num % 2 == 0
 }))
-print(numbers.map { $0 * 2 })
-print(numbers.map(HighOrderFunction.multiple))
+print(numbers.filter({ $0 % 2 == 0 }))
+
+let doubleEven = numbers
+    .map { $0 + 2 }
+    .filter { $0 % 2 == 0 }
+print(doubleEven)
+
+print(numbers.filter(HighOrderFunction.filterEven2))
+
+//print(HighOrderFunction.multiply2(numbers))
+//print(numbers.map({ (num) -> Int in
+//    num * 2
+//}))
+//print(numbers.map { $0 * 2 })
+//print(numbers.map(HighOrderFunction.multiple))
 
 // 익명함수
 //AnonymousFuction.isFinish(finish: true)
