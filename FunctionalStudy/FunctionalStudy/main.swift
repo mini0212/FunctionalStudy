@@ -8,11 +8,19 @@
 
 import Foundation
 
+// 고차함수
+let numbers = [0, 1, 2, 3, 4]
+print(HighOrderFunction.multiply2(numbers))
+print(numbers.map({ (num) -> Int in
+    num * 2
+}))
+print(numbers.map { $0 * 2 })
+print(numbers.map(HighOrderFunction.multiple))
 
 // 익명함수
-AnonymousFuction.isFinish(finish: true)
-AnonymousFuction.test(true)
-AnonymousFuction.test2(false)
+//AnonymousFuction.isFinish(finish: true)
+//AnonymousFuction.test(true)
+//AnonymousFuction.test2(false)
 
 
 //let lucy = { () -> Void in
