@@ -11,19 +11,38 @@ import Foundation
 // 고차함수
 let numbers = [0, 1, 2, 3, 4]
 
-print(HighOrderFunction.filterEvens(numbers))
+print(HighOrderFunction.reduceNumbers(numbers))
 
-print(numbers.filter({ (num) -> Bool in
-    num % 2 == 0
+print(numbers.reduce(10, { (result: Int, currentItem: Int) -> Int in
+    return result + currentItem
 }))
-print(numbers.filter({ $0 % 2 == 0 }))
 
-let doubleEven = numbers
-    .map { $0 + 2 }
-    .filter { $0 % 2 == 0 }
-print(doubleEven)
+print(numbers.reduce(10) { $0 + $1 })
 
-print(numbers.filter(HighOrderFunction.filterEven2))
+let texts = ["a", "b", "c", "d"]
+print(texts.reduce("") { $0 + $1 })
+
+let letters = "abracadabra"
+let letterCount = letters.reduce(into: [:]) { counts, letter in
+    counts[letter, default: 0] += 1
+}
+
+print(letterCount)
+
+
+//print(HighOrderFunction.filterEvens(numbers))
+//
+//print(numbers.filter({ (num) -> Bool in
+//    num % 2 == 0
+//}))
+//print(numbers.filter({ $0 % 2 == 0 }))
+//
+//let doubleEven = numbers
+//    .map { $0 + 2 }
+//    .filter { $0 % 2 == 0 }
+//print(doubleEven)
+//
+//print(numbers.filter(HighOrderFunction.filterEven2))
 
 //print(HighOrderFunction.multiply2(numbers))
 //print(numbers.map({ (num) -> Int in

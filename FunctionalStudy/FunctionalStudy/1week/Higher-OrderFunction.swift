@@ -34,6 +34,15 @@ class HighOrderFunction {
     
     static let filterEven2: (Int) -> Bool = { $0 % 2 == 0 }
     
+    
+    static func reduceNumbers(_ numbers: [Int]) -> Int {
+        var reduceNumbers = 10
+        
+        for number in numbers {
+            reduceNumbers += number
+        }
+        return reduceNumbers
+    }
 }
 
 
