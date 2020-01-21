@@ -8,26 +8,57 @@
 
 import Foundation
 
+// 합성 함수
+let composited = FunctionComposition.compositor(increment: FunctionComposition.increment(_:), message: FunctionComposition.message(with:))
+let result = composited(26)
+print(result)
+
+let spellOutRandom = FunctionComposition.generateRandomNumber >>> FunctionComposition.spell
+print(spellOutRandom(1))
+    
+//// 고차함수
+//let numbers = [0, 1, 2, 3, 4]
+//
+//print(HighOrderFunction.reduceNumbers(numbers))
+//
+//print(numbers.reduce(10, { (result: Int, currentItem: Int) -> Int in
+//    return result + currentItem
+//}))
+//
+//print(numbers.reduce(10) { $0 + $1 })
+//
+//let texts = ["a", "b", "c", "d"]
+//print(texts.reduce("") { $0 + $1 })
+//
+//let letters = "abracadabra"
+//let letterCount = letters.reduce(into: [:]) { counts, letter in
+//    counts[letter, default: 0] += 1
+//}
+//
+//print(letterCount)
+
+//HighOrderFunction.calculate(.multiple)
+
 // 고차함수
-let numbers = [0, 1, 2, 3, 4]
-
-print(HighOrderFunction.reduceNumbers(numbers))
-
-print(numbers.reduce(10, { (result: Int, currentItem: Int) -> Int in
-    return result + currentItem
-}))
-
-print(numbers.reduce(10) { $0 + $1 })
-
-let texts = ["a", "b", "c", "d"]
-print(texts.reduce("") { $0 + $1 })
-
-let letters = "abracadabra"
-let letterCount = letters.reduce(into: [:]) { counts, letter in
-    counts[letter, default: 0] += 1
-}
-
-print(letterCount)
+//let numbers = [0, 1, 2, 3, 4]
+//
+//print(HighOrderFunction.reduceNumbers(numbers))
+//
+//print(numbers.reduce(10, { (result: Int, currentItem: Int) -> Int in
+//    return result + currentIte
+//}))
+//
+//print(numbers.reduce(10) { $0 + $1 })
+//
+//let texts = ["a", "b", "c", "d"]
+//print(texts.reduce("") { $0 + $1 })
+//
+//let letters = "abracadabra"
+//let letterCount = letters.reduce(into: [:]) { counts, letter in
+//    counts[letter, default: 0] += 1
+//}
+//
+//print(letterCount)
 
 
 //print(HighOrderFunction.filterEvens(numbers))
