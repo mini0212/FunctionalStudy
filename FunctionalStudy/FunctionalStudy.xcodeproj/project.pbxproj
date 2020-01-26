@@ -10,6 +10,8 @@
 		3937F43423CB2FDA005B61B9 /* AnonymousFuction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3937F43323CB2FDA005B61B9 /* AnonymousFuction.swift */; };
 		3937F43623CB4D96005B61B9 /* Higher-OrderFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3937F43523CB4D96005B61B9 /* Higher-OrderFunction.swift */; };
 		39A87AC523D717ED0061CBE9 /* Function-composition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A87AC423D717ED0061CBE9 /* Function-composition.swift */; };
+		39A87AC823D72CF70061CBE9 /* Currying.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A87AC723D72CF70061CBE9 /* Currying.swift */; };
+		39A87ACA23D845830061CBE9 /* Async-Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39A87AC923D845830061CBE9 /* Async-Result.swift */; };
 		39BD574D23CAD7B200DC01CA /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BD574C23CAD7B200DC01CA /* main.swift */; };
 		39BD575423CAD89800DC01CA /* PureFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BD575323CAD89800DC01CA /* PureFunction.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +32,8 @@
 		3937F43323CB2FDA005B61B9 /* AnonymousFuction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnonymousFuction.swift; sourceTree = "<group>"; };
 		3937F43523CB4D96005B61B9 /* Higher-OrderFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Higher-OrderFunction.swift"; sourceTree = "<group>"; };
 		39A87AC423D717ED0061CBE9 /* Function-composition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Function-composition.swift"; sourceTree = "<group>"; };
+		39A87AC723D72CF70061CBE9 /* Currying.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Currying.swift; sourceTree = "<group>"; };
+		39A87AC923D845830061CBE9 /* Async-Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Async-Result.swift"; sourceTree = "<group>"; };
 		39BD574923CAD7B200DC01CA /* FunctionalStudy */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = FunctionalStudy; sourceTree = BUILT_PRODUCTS_DIR; };
 		39BD574C23CAD7B200DC01CA /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		39BD575323CAD89800DC01CA /* PureFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PureFunction.swift; sourceTree = "<group>"; };
@@ -50,6 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				39A87AC423D717ED0061CBE9 /* Function-composition.swift */,
+				39A87AC723D72CF70061CBE9 /* Currying.swift */,
+				39A87AC923D845830061CBE9 /* Async-Result.swift */,
 			);
 			path = 2week;
 			sourceTree = "<group>";
@@ -150,7 +156,9 @@
 			files = (
 				39BD574D23CAD7B200DC01CA /* main.swift in Sources */,
 				3937F43423CB2FDA005B61B9 /* AnonymousFuction.swift in Sources */,
+				39A87ACA23D845830061CBE9 /* Async-Result.swift in Sources */,
 				39BD575423CAD89800DC01CA /* PureFunction.swift in Sources */,
+				39A87AC823D72CF70061CBE9 /* Currying.swift in Sources */,
 				3937F43623CB4D96005B61B9 /* Higher-OrderFunction.swift in Sources */,
 				39A87AC523D717ED0061CBE9 /* Function-composition.swift in Sources */,
 			);

@@ -8,13 +8,36 @@
 
 import Foundation
 
-// 합성 함수
-let composited = FunctionComposition.compositor(increment: FunctionComposition.increment(_:), message: FunctionComposition.message(with:))
-let result = composited(26)
-print(result)
+// Async Result
+//let ar = asyncResult.shared
+//
+//let num = [1,2,3,4,5,6,7,8,9,10]
+////print(ar.f(num))
+//ar.asyncF(num) { (result) in
+//    print(result)
+//}
 
-let spellOutRandom = FunctionComposition.generateRandomNumber >>> FunctionComposition.spell
-print(spellOutRandom(1))
+// currying
+//let currying = Currying.shared
+//let sum = currying.add(a: 2, b: 3)
+//
+//let xs = 1...10
+//let x = xs.map { currying.add(a: $0, b: 2)}
+//let xTwo = xs.map(currying.addTwo(a:))
+////print(x)
+////print(xTwo)
+//
+//let xThreeF = currying.addThree(a: 2)
+//let xThree = xs.map(xThreeF)
+//print(xThree)
+
+//// 합성 함수
+//let composited: ((Int) -> String) = FunctionComposition.compositor(increment: FunctionComposition.increment(_:), message: FunctionComposition.message(with:))
+//let result: String = composited(26)
+//print(result)
+//
+//let spellOutRandom = FunctionComposition.generateRandomNumber >>> FunctionComposition.spell
+//print(spellOutRandom(1))
     
 
 //HighOrderFunction.calculate(.multiple)
@@ -40,6 +63,21 @@ print(spellOutRandom(1))
 //
 //print(letterCount)
 
+//let arr = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+//let flatArr = arr.flatMap { $0 }
+//print(flatArr)
+
+let a = [1, 2, 3, 4, 5]
+let c: (Int) -> Int? = { n in
+    if n % 2 == 0 {
+        return n * 2
+    }
+    return nil
+}
+
+print(a.map(c))
+let b = a.compactMap(c)
+print(b)
 
 //print(HighOrderFunction.filterEvens(numbers))
 //
@@ -95,3 +133,6 @@ print(spellOutRandom(1))
 //print(objEx.num)
 //print(PureFunction.addValue5(obj: objEx, b: 5))
 //print(objEx.num)
+
+//dispatchMain()  // 커맨드라인에서는 이거 안해주면 dispatch 안돌아간다. 왜?
+// 이벤트 런루프(커멘드 라인에서만 사용, 앱에서 사용하면 죽어) - 비동기작업을 할 때 사용하기
