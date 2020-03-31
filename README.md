@@ -1,7 +1,7 @@
 # FunctionalStudy
 
 - Start: 2020.01.08
-- End:
+- End: 2020.03.04
 
 ## 목차
 
@@ -26,3 +26,7 @@
 - FizzBuzz
 - Low-High
 - Weather Forecast
+
+5주차는 코로나로 인해 개인적으로 하기로 합의!
+
+[함수형 프로그래밍]([https://www.notion.so/caeee5cfe4c4430d982f02d0a23238a0)
